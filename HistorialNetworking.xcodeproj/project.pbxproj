@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F1EBC5D1D934160001B145A /* HistorialApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1EBC5C1D934160001B145A /* HistorialApi.swift */; };
+		2F1EBC5F1D9343D6001B145A /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1EBC5E1D9343D6001B145A /* NextViewController.swift */; };
+		2F9334061D9333FF00991169 /* Historial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9334051D9333FF00991169 /* Historial.swift */; };
+		2FB84DEA1D92E77F009CDD98 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB84DDD1D92E6C0009CDD98 /* Alamofire.framework */; };
+		2FB84DEB1D92E77F009CDD98 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB84DDD1D92E6C0009CDD98 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB84DF01D92E907009CDD98 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB84DEF1D92E907009CDD98 /* CustomCell.swift */; };
+		2FEBBD831D92E67300780211 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBBD821D92E67300780211 /* AppDelegate.swift */; };
+		2FEBBD851D92E67300780211 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBBD841D92E67300780211 /* ViewController.swift */; };
+		2FEBBD881D92E67300780211 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBBD861D92E67300780211 /* Main.storyboard */; };
+		2FEBBD8A1D92E67300780211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBBD891D92E67300780211 /* Assets.xcassets */; };
+		2FEBBD8D1D92E67300780211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEBBD8B1D92E67300780211 /* LaunchScreen.storyboard */; };
+		A04BBA105789D1A7E9C9BDD7 /* Pods_HistorialNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99625195253A1E53A02AE052 /* Pods_HistorialNetworking.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2F1EBC571D933F19001B145A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F1EBC4B1D933F19001B145A /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 12820ED76456E611286DA107090BBF9F;
+			remoteInfo = "Pods-HistorialNetworking";
+		};
+		2F1EBC591D933F19001B145A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F1EBC4B1D933F19001B145A /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B2E219CE6A5BD42897D47B842587A836;
+			remoteInfo = SDWebImage;
+		};
+		2FB84DDC1D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		2FB84DDE1D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		2FB84DE01D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		2FB84DE21D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		2FB84DE41D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		2FB84DE61D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		2FB84DE81D92E6C0009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		2FB84DEC1D92E77F009CDD98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2FB84DEE1D92E77F009CDD98 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2FB84DEB1D92E77F009CDD98 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F1EBC4B1D933F19001B145A /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		2F1EBC5C1D934160001B145A /* HistorialApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialApi.swift; sourceTree = "<group>"; };
+		2F1EBC5E1D9343D6001B145A /* NextViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
+		2F9334051D9333FF00991169 /* Historial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Historial.swift; sourceTree = "<group>"; };
+		2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		2FB84DEF1D92E907009CDD98 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		2FEBBD7F1D92E67300780211 /* HistorialNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HistorialNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FEBBD821D92E67300780211 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2FEBBD841D92E67300780211 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FEBBD871D92E67300780211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2FEBBD891D92E67300780211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FEBBD8C1D92E67300780211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2FEBBD8E1D92E67300780211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		849F46026122CEB3686FD46E /* Pods-HistorialNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HistorialNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HistorialNetworking/Pods-HistorialNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		99625195253A1E53A02AE052 /* Pods_HistorialNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HistorialNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91FFF52C4368C415FB247F4 /* Pods-HistorialNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HistorialNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-HistorialNetworking/Pods-HistorialNetworking.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2FEBBD7C1D92E67300780211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB84DEA1D92E77F009CDD98 /* Alamofire.framework in Frameworks */,
+				A04BBA105789D1A7E9C9BDD7 /* Pods_HistorialNetworking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F1EBC4C1D933F19001B145A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC581D933F19001B145A /* Pods_HistorialNetworking.framework */,
+				2F1EBC5A1D933F19001B145A /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F1EBC5B1D93414A001B145A /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC5C1D934160001B145A /* HistorialApi.swift */,
+			);
+			name = Net;
+			sourceTree = "<group>";
+		};
+		2F9333FD1D9333DF00991169 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F9334051D9333FF00991169 /* Historial.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2FB84DD21D92E6BF009CDD98 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FB84DDD1D92E6C0009CDD98 /* Alamofire.framework */,
+				2FB84DDF1D92E6C0009CDD98 /* Alamofire iOS Tests.xctest */,
+				2FB84DE11D92E6C0009CDD98 /* Alamofire.framework */,
+				2FB84DE31D92E6C0009CDD98 /* Alamofire OSX Tests.xctest */,
+				2FB84DE51D92E6C0009CDD98 /* Alamofire.framework */,
+				2FB84DE71D92E6C0009CDD98 /* Alamofire tvOS Tests.xctest */,
+				2FB84DE91D92E6C0009CDD98 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEBBD761D92E67300780211 = {
+			isa = PBXGroup;
+			children = (
+				2FEBBD811D92E67300780211 /* HistorialNetworking */,
+				2FEBBD801D92E67300780211 /* Products */,
+				2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */,
+				748C7DE428841590BC9CA4BC /* Pods */,
+				5B44CCD050CD4E934CF1F80D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2FEBBD801D92E67300780211 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2FEBBD7F1D92E67300780211 /* HistorialNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2FEBBD811D92E67300780211 /* HistorialNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC5B1D93414A001B145A /* Net */,
+				2F9333FD1D9333DF00991169 /* Models */,
+				2FEBBD821D92E67300780211 /* AppDelegate.swift */,
+				2FEBBD841D92E67300780211 /* ViewController.swift */,
+				2FEBBD861D92E67300780211 /* Main.storyboard */,
+				2FEBBD891D92E67300780211 /* Assets.xcassets */,
+				2FEBBD8B1D92E67300780211 /* LaunchScreen.storyboard */,
+				2FEBBD8E1D92E67300780211 /* Info.plist */,
+				2FB84DEF1D92E907009CDD98 /* CustomCell.swift */,
+				2F1EBC5E1D9343D6001B145A /* NextViewController.swift */,
+			);
+			path = HistorialNetworking;
+			sourceTree = "<group>";
+		};
+		5B44CCD050CD4E934CF1F80D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F1EBC4B1D933F19001B145A /* Pods.xcodeproj */,
+				99625195253A1E53A02AE052 /* Pods_HistorialNetworking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748C7DE428841590BC9CA4BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				849F46026122CEB3686FD46E /* Pods-HistorialNetworking.debug.xcconfig */,
+				E91FFF52C4368C415FB247F4 /* Pods-HistorialNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2FEBBD7E1D92E67300780211 /* HistorialNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FEBBD911D92E67300780211 /* Build configuration list for PBXNativeTarget "HistorialNetworking" */;
+			buildPhases = (
+				0B6A708114B96A6FD95FC067 /* [CP] Check Pods Manifest.lock */,
+				2FEBBD7B1D92E67300780211 /* Sources */,
+				2FEBBD7C1D92E67300780211 /* Frameworks */,
+				2FEBBD7D1D92E67300780211 /* Resources */,
+				2FB84DEE1D92E77F009CDD98 /* Embed Frameworks */,
+				E8BB202C16DFCF1B5DD3F16B /* [CP] Embed Pods Frameworks */,
+				4F504A46BE65EFD0E966E5F3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FB84DED1D92E77F009CDD98 /* PBXTargetDependency */,
+			);
+			name = HistorialNetworking;
+			productName = HistorialNetworking;
+			productReference = 2FEBBD7F1D92E67300780211 /* HistorialNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2FEBBD771D92E67300780211 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Farley Achinte";
+				TargetAttributes = {
+					2FEBBD7E1D92E67300780211 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2FEBBD7A1D92E67300780211 /* Build configuration list for PBXProject "HistorialNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2FEBBD761D92E67300780211;
+			productRefGroup = 2FEBBD801D92E67300780211 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2FB84DD21D92E6BF009CDD98 /* Products */;
+					ProjectRef = 2FB84DD11D92E6BF009CDD98 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 2F1EBC4C1D933F19001B145A /* Products */;
+					ProjectRef = 2F1EBC4B1D933F19001B145A /* Pods.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				2FEBBD7E1D92E67300780211 /* HistorialNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2F1EBC581D933F19001B145A /* Pods_HistorialNetworking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_HistorialNetworking.framework;
+			remoteRef = 2F1EBC571D933F19001B145A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2F1EBC5A1D933F19001B145A /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 2F1EBC591D933F19001B145A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DDD1D92E6C0009CDD98 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 2FB84DDC1D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DDF1D92E6C0009CDD98 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 2FB84DDE1D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DE11D92E6C0009CDD98 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 2FB84DE01D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DE31D92E6C0009CDD98 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 2FB84DE21D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DE51D92E6C0009CDD98 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 2FB84DE41D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DE71D92E6C0009CDD98 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 2FB84DE61D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2FB84DE91D92E6C0009CDD98 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 2FB84DE81D92E6C0009CDD98 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2FEBBD7D1D92E67300780211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBBD8D1D92E67300780211 /* LaunchScreen.storyboard in Resources */,
+				2FEBBD8A1D92E67300780211 /* Assets.xcassets in Resources */,
+				2FEBBD881D92E67300780211 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B6A708114B96A6FD95FC067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F504A46BE65EFD0E966E5F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HistorialNetworking/Pods-HistorialNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8BB202C16DFCF1B5DD3F16B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HistorialNetworking/Pods-HistorialNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FEBBD7B1D92E67300780211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FEBBD851D92E67300780211 /* ViewController.swift in Sources */,
+				2F1EBC5F1D9343D6001B145A /* NextViewController.swift in Sources */,
+				2F9334061D9333FF00991169 /* Historial.swift in Sources */,
+				2FB84DF01D92E907009CDD98 /* CustomCell.swift in Sources */,
+				2FEBBD831D92E67300780211 /* AppDelegate.swift in Sources */,
+				2F1EBC5D1D934160001B145A /* HistorialApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2FB84DED1D92E77F009CDD98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 2FB84DEC1D92E77F009CDD98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2FEBBD861D92E67300780211 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FEBBD871D92E67300780211 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2FEBBD8B1D92E67300780211 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2FEBBD8C1D92E67300780211 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2FEBBD8F1D92E67300780211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2FEBBD901D92E67300780211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2FEBBD921D92E67300780211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 849F46026122CEB3686FD46E /* Pods-HistorialNetworking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HistorialNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pruebas.ios.HistorialNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2FEBBD931D92E67300780211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E91FFF52C4368C415FB247F4 /* Pods-HistorialNetworking.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HistorialNetworking/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pruebas.ios.HistorialNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2FEBBD7A1D92E67300780211 /* Build configuration list for PBXProject "HistorialNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBBD8F1D92E67300780211 /* Debug */,
+				2FEBBD901D92E67300780211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FEBBD911D92E67300780211 /* Build configuration list for PBXNativeTarget "HistorialNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FEBBD921D92E67300780211 /* Debug */,
+				2FEBBD931D92E67300780211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2FEBBD771D92E67300780211 /* Project object */;
+}
